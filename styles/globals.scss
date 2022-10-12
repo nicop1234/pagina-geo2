@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+.hero {
+    height: 600px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(../public/img/oceano.jpg) center center / cover no-repeat;
+  }
+
+.anclas {
+    text-decoration: none !important;
+  }
+
+.fuente {
+    font-family: "Heebo", sans-serif;
+  }
+
+.nombres-estilo{
+    font-size: 15px;
+}
+.titulo {
+    border-bottom: 1px solid #dcd4d4;
+    padding: 10px;
+}
