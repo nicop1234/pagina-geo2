@@ -20,15 +20,14 @@ const Footer = ({hrn1, hrn2, hrn3, n1, n2, n3, hrn4, hrn5, hrn6, n4, n5, n6}) =>
       <Button
         onClick={() => setOpen(!open)}
         aria-controls='example-collapse-text'
-        aria-expanded={open}
-        style={{ width: "10%" }}>
+        aria-expanded={open} >
         Guia
       </Button>
       <div style={{ minHeight: "150px" }}>
         <Collapse in={open} >
           <div id='example-collapse-text'>
             <div className='d-flex justify-content-center pt-2 '>
-              <Card body style={{ width: "35%" }}>
+              <Card body style={{ width: "50%" }} >
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
                     <Link href={hrn1}>

@@ -39,32 +39,40 @@ const header = ({ children }) => {
         </Container>
       </Navbar>
       {children}
-      <div className='text-white d-flex justify-content-center bg-dark'>
-        <Container>
-          <Row className='mb-3'>
-            <h6 className='mt-3 mb-3 fuente titulo'>Hecho por</h6>
-            <div className='d-flex'>
-              <Container className='d-flex justify-content-center'>
-                {Nombres.map(({ nombre }, i) => (
-                  <div className='d-flex col-md-3 col-lg-1 col-xl-1 col-sm-4 col-4 ms-1'>
-                    <ul>
-                      <li className='fuente nombres-estilo'>{nombre}</li>
-                    </ul>
-                  </div>
-                ))}
+
+      
+        <div className='d-flex bg-dark text-white'>
+          <Container>
+            <Row>
+              <div className='d-flex mx-3 titulo mt-3 mb-3'>
+                <h6 className=' fuente '>Hecho por</h6>
+              </div>
+            </Row>
+            <Row>
+              <Container className='d-flex d-flex justify-content-center'> 
+              <Row className="justify-content-center">
+              {Nombres.map(({ nombre }, i) => (
+                <div className="col-5 col-lg-1 col-md-3 ms-3">
+                  <ul>
+                    <li className='fuente nombres-estilo'>{nombre}</li>
+                  </ul>
+                </div>
+              ))}
+              </Row>
               </Container>
-            </div>
-          </Row>
-          <Row>
-            <div className='text-center'>
-              <p>
-                <span className='text-center'> © </span> DivGeeks Industries/
-                From SFN
-              </p>
-            </div>
-          </Row>
-        </Container>
-      </div>
+
+            </Row>
+            <Row>
+              <div className='d-flex justify-content-center'>
+                <p>
+                  <span> © </span> DivGeeks Industries /
+                  From SFN
+                </p>
+              </div>
+            </Row>
+          </Container>
+        </div>
+    
     </>
   );
 };
