@@ -4,7 +4,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import { Container, Row, Button } from "react-bootstrap";
+import Bootstrap1 from "../components/Bootstrap1";
+import Bootstrap2 from "../components/Bootstrap2";
+import { Container, Row } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -31,57 +33,101 @@ export default function Home() {
             n6='Problematica | milla 201'
           />
 
-          <Container className='mt-4' id='ques'>
-            <Row className=' mb-5'>
-              <div>
-                <h1 className='fuente text-center'>La pesca</h1>
+          <Container>
+            <Row className=' mb-5 mt-5 ' id='ques'>
+              <div className='d-flex titulo1 justify-content-center'>
+                <h1 className='fuente '>La pesca</h1>
               </div>
-              <div className=' titulo1'></div>
             </Row>
+            <Bootstrap2
+              contedido='La actividad pesquera y acuícola consiste en la captura y
+            cría de peces, crustáceos, moluscos y otros organismos de
+            aguas saladas y dulces para aprovechar algunos recursos de
+            la Naturaleza sin transformarlos. Estas actividades, además
+            de proporcionar alimento, representan una fuente de
+            ingresos.'
+              direccion='/img/pesca.jpg'
+            />
+          </Container>
+
+          <section>
             <Container>
-              <Row>
-                <div className="col-12 col-lg-6 d-flex align-items-center mb-5">
-                  <p className="text-center">
-                  La actividad pesquera y acuícola consiste en la captura y cría de peces, crustáceos, moluscos y otros organismos de aguas saladas y dulces para aprovechar algunos recursos de la Naturaleza sin transformarlos. Estas actividades, además de proporcionar alimento, representan una fuente de ingresos.
-                  </p>
-                </div>
-                <div className="col-12 col-lg-6 d-flex align-items-center mb-5">
-                <Image
-                    width={1920}
-                    height={1159}
-                    layout='intrinsic'
-                    src='/img/pesca.jpg'
-                  />
+              <Row className=' mb-5 mt-5' id='tipos'>
+                <div className='d-flex titulo1 justify-content-center'>
+                  <h2 className='fuente'>Tipos de barcos</h2>
                 </div>
               </Row>
-            </Container>
-          </Container>
-          <Container className='mt-4 col-12' id='QuePesca' >
-            <Row className=' mb-5'>
-              <div>
-                <h1 className='fuente text-center'>La pesca</h1>
-              </div>
-              <div className=' titulo1'></div>
-            </Row>
-            <Container>
-              <Row>
-                <div className="col-12 col-lg-6 d-flex align-items-center mb-5">
-                <Image
-                    width={1920}
-                    height={1159}
-                    layout='intrinsic'
-                    src='/img/pesca.jpg'
-                  />
-                </div>
-                <div className="col-12 col-lg-6 d-flex align-items-center mb-5">
-                  <p className="text-center">
-                  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                  </p>
+
+              <Row className='mb-4'>
+                <div>
+                  <div className='d-flex justify-content-center fuente'>
+                    <p>
+                      Puede considerarse un barco de pesca aquel objeto flotante
+                      desde el que alguien saca un pez del agua mediante algún
+                      tipo de arte. Los hay en los que solo cabe una silla y un
+                      pequeño motor eléctrico, o bien, de los que se parecen más
+                      a un transatlántico.{" "}
+                    </p>
+                  </div>
+                  <div className='parrafos fuente'>
+                    <p>
+                      Más allá del tipo de técnica o material que utilices para
+                      obtener tus capturas, el tipo de barcos pesqueros cobra
+                      gran importancia, ya sea una lancha para montar en un
+                      remolque o un crucero por su autonomía para hacer más
+                      horas de curricán y el equipamiento específico para pesca
+                      de altura.
+                    </p>
+                  </div>
                 </div>
               </Row>
+
+              <Bootstrap1
+                direccion='/img/gomon.png'
+                titulo='Embarcacion neumatica'
+                contedido='Este tipo de embarcaciones debe contar tanto con un
+                motor eléctrico como con unos remos, lejos de eso, la
+                inversión es minima. Las embarcaciones neumáticas
+                también pueden servir como complemento de un
+                barco mayor para no realizar demasiados
+                movimientos. Tienen un aforo de 1 a 2
+                personas.'
+              />
+              <Bootstrap2
+                direccion='/img/lancha-motor.jpg'
+                titulo='Lancha a motor '
+                contedido='La lancha es una embarcación pequeña de vela y remos, o bien de vapor o de motor (en estos casos, los más habituales hoy en día, se denomina lancha de motor). Este tipo de embarcación suele estar homologada para cinco personas y se caracteriza por ser muy estable y su facilidad de navegación, debido a sus líneas de casco.F'
+              />
+              <Bootstrap1
+                direccion='/img/central.jpg'
+                titulo='Barco de consola central'
+                contedido='Es un tipo de barco de casco abierto de una sola cubierta donde el timón está en el centro.  Hay una cabina en algunos modelos; estos suelen estar situados en la proa y albergan pequeñas literas para dormir. Las literas pequeñas también pueden ubicarse dentro de la consola y debajo de la cubierta de los barcos con consola central más grandes.
+                La mayoría de las consolas centrales funcionan con motores fuera de borda y pueden estar equipadas con uno o dos, lo que es común, hasta cinco o más en el caso de embarcaciones con consola central muy grandes.
+                '
+              />
+                <Bootstrap2
+                direccion='/img/Barco-cabinado-pequeño.png'
+                titulo='Barco cabinado pequeño'
+                contedido='El barco cabinado pequeño tiene unas dimensiones similares a las de la consola central. Sin embargo, el barco cabinado nos permite una mayor autonomía con la disposición de una cabina para poder pasar la noche en la embarcación.
+                Este tipo de embarcación se caracteriza por tener una proa elevada en forma de V que facilita las condiciones de planeo y nos garantiza estar estables. Además, la bañera es amplia, donde la opción de los motores fueraborda aporta amplitud a la estiba interior, detalles que caracterizan a esta embarcación como una propia de pescadores1
+                '
+              />
+                <Bootstrap1
+                direccion='/img/catamaran1.jpg'
+                titulo='Catamaran'
+                contedido='Los catamaranes nos ofrecen una gran eslora y un lujoso habitáculo donde los haya. Esta embarcación no solo se adapta a la afición de la pesca, sino también de las múltiples comodidades que este te ofrece.
+                Los dos cascos con los que cuenta aportan estabilidad en fondeo y en navegación. La separación entre motores permite un fácil movimiento que favorece especialmente a la pesca de altura.
+                '
+              />
+                <Bootstrap2
+                direccion='/img/barco-pesquero.jpg'
+                titulo='Crucero de pesca.'
+                contedido='Esta clase de crucero consta de más de 10 metros de eslora es el idóneo para la pesca de altura, además, nos da las comodidades que un barco de menores dimensiones no nos puede ofrecer.
+                Destaca de estos cruceros la gran autonomía de la que disponen al tener unos mayores depósitos de combustible. Algunos cuentan con sistemas intra bordos que facilitan las maniobras dentro y fuera del puerto. Cabe destacar que la amplitud de este tipo de embarcación nos permite contar con un mayor aforo.
+                '
+              />
             </Container>
-          </Container>
-          
+          </section>
         </Layout>
       </main>
     </>
