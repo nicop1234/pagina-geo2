@@ -7,7 +7,10 @@ import Hero from "../components/Hero";
 import Bootstrap1 from "../components/Bootstrap1";
 import Bootstrap2 from "../components/Bootstrap2";
 import Objetivos from "../components/Objetivos";
+import Card1 from "../components/Card1";
+import Swiper1 from "../components/Swiper1";
 import { Container, Row } from "react-bootstrap";
+import Swiper2 from "../components/Swiper2";
 
 export default function Home() {
   return (
@@ -26,18 +29,20 @@ export default function Home() {
             hrn4='#objetivos'
             hrn5='#inidep'
             hrn6='#problematica'
+            hrn7='#videos'
             n1='La pesca'
             n2='Que se pesca'
             n3='Tipos de barcos'
             n4='Objetivos'
             n5='Inidep'
             n6='Problematica | milla 201'
+            n7='videos'
           />
 
           <Container>
             <Row className=' mb-5 mt-5 ' id='ques'>
               <div className='d-flex titulo1 justify-content-center'>
-                <h1 className='fuente '>La pesca</h1>
+                <h2 className='fuente '>La pesca</h2>
               </div>
             </Row>
             <Bootstrap2
@@ -49,8 +54,203 @@ export default function Home() {
             ingresos.'
               direccion='/img/pesca.jpg'
             />
-            <div id='tipos'></div>
+            <div id='QuePesca'></div>
           </Container>
+          <section>
+            <Container className='mt-4 col-12'>
+              <Row className=' mb-5'>
+                <div>
+                  <h2 className='fuente text-center'>¿Que se pesca?</h2>
+                </div>
+                <div className=' titulo1'></div>
+              </Row>
+              <Container>
+                <Row>
+                  <div className='col-12 col-lg-6 d-flex align-items-center mb-5'>
+                    <Image
+                      width={1920}
+                      height={1159}
+                      layout='intrinsic'
+                      src='/img/grafico-peces.png'
+                    />
+                  </div>
+                  <div className='col-12 col-lg-6 d-flex align-items-center mb-5'>
+                    <p className='text-center fuente'>
+                      La pesca en el Mar Argentino está compuesta principalmente
+                      por peces, con una participación promedio del 69% en el
+                      tonelaje de las capturas totales desde el inicio de los
+                      2000 a 2019
+                    </p>
+                  </div>
+                </Row>
+              </Container>
+            </Container>
+            <div className='fondo-mar mb-5 mt-5'>
+              <Swiper1></Swiper1>
+            </div>
+            <Container className='mb-5' id='merluza'>
+              <Row>
+                <div className='d-flex justify-content-center'>
+                  <h3 className='text-center fuente'>Merluza</h3>
+                </div>
+                <div className=' titulo1'></div>
+              </Row>
+            </Container>
+            <Container>
+              <Row>
+                <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
+                  <div>
+                    <p className=' fuente'>
+                      La merluza hubbsi ha sido históricamente la principal
+                      especie capturada, representando aproximadamente el 52% de
+                      los peces en las últimas dos décadas. Otras especies de
+                      importancia son la merluza de cola , la corvina blanca ,
+                      la anchoíta , y la caballa. La merluza argentina fue de
+                      las principales especies la que explicó el mayor dinamismo
+                      de la actividad de la pesca marítima de la historia
+                      argentina, en la década del 90. En ese mismo año, los
+                      desembarques de merluza hubbsi representaron alrededor del
+                      70% de las capturas totales de peces y el 33% de las
+                      capturas totales de peces, moluscos y crustáceos . 2 Para
+                      2019, el límite de captura de merluza al norte del
+                      paralelo 41 S fue de 33.000 toneladas, mientras que para
+                      el Sur del paralelo 41 S el tope para ese año fue de
+                      280.000 toneladas. Los derechos relacionados con las
+                      condiciones para pescar y explotar los recursos pueden ser
+                      de acceso o de captura. Por su parte, los derechos de
+                      captura, que establecen la intensidad de uso del recurso,
+                      se dividen en derechos de esfuerzo, que definen por
+                      ejemplo el tiempo de pesca, el tamaño del buque, tipos de
+                      artes de pesca, etc., y los derechos de producto, que
+                      determinan el nivel de captura permitida.
+                    </p>
+                  </div>
+                </div>
+                <div className='col-12 col-lg-6 '>
+                  <Image
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
+                    src='/img/merluza.png'
+                  />
+                  <p className='fuente'>
+                    El macho alcanza su madurez con alrededor de 36 cm y con 40
+                    cm en hembras. Se alimenta de peces más pequeños y habita a
+                    una profundidad media de 200 m
+                  </p>
+                </div>
+              </Row>
+            </Container>
+            <Container className='mb-5 mt-5' id='Anchoita'>
+              <Row>
+                <div className='col-12 d-flex'>
+                  <div className=' col-6 d-flex justify-content-center'>
+                    <h3 className='text-center fuente'>Caballa</h3>
+                  </div>
+                  <div className=' col-6 d-flex justify-content-center'>
+                    <h3 className='text-center fuente'>Anchoita</h3>
+                  </div>
+                </div>
+                <div className=' titulo1'></div>
+              </Row>
+            </Container>
+            <Container>
+              <Row>
+                <div className='col-12 col-lg-6 '>
+                  <Image
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
+                    src='/img/caballa.png'
+                  />
+                  <h6 className='fuente'>
+                    Mide entre 25 y 45 cm de longitud y puede alcanzar 4,5 kg de
+                    peso.
+                  </h6>
+                  <h6 className='fuente'>
+                    La caballa se alimenta de plancton, huevos de peces y
+                    pequeños crustáceos.
+                  </h6>
+                  <h6 className='fuente'>
+                    Vive en aguas abiertas cerca de la superficie. En primavera,
+                    permanece en zonas cercanas a la costa.
+                  </h6>
+                </div>
+                <div className='col-12 col-lg-6 '>
+                  <Image
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
+                    src='/img/anchoita.png'
+                  />
+                  <h6 className='fuente'>
+                    El rango de tallas para ambos sexos es de 14 a 19 cm. El
+                    máximo observado es 21 cm en los adultos.{" "}
+                  </h6>
+                  <h6 className='fuente'>
+                    se extiende sobre la plataforma continental del Atlántico
+                    Sudoccidental, desde la latitud 24º Sur (San Pablo, Brasil),
+                    hasta la latitud 48º Sur (Golfo de San Jorge en la patagonia
+                    Argentina)
+                  </h6>
+                </div>
+              </Row>
+            </Container>
+            <Container className='mb-5 mt-5' id='merluza-cola'>
+              <Row>
+                <div className='col-12 d-flex'>
+                  <div className=' col-6 d-flex justify-content-center'>
+                    <h3 className='text-center fuente'>Merluza de cola</h3>
+                  </div>
+                  <div className=' col-6 d-flex justify-content-center'>
+                    <h3 className='text-center fuente'>Corvina blanca</h3>
+                  </div>
+                </div>
+                <div className=' titulo1'></div>
+              </Row>
+            </Container>
+            <Container>
+              <Row>
+                <div className='col-12 col-lg-6 '>
+                  <Image
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
+                    src='/img/merluza-cola.png'
+                  />
+                  <h6 className='fuente'>
+                    La talla máxima observada es de 117 cm de longitud total{" "}
+                  </h6>
+                  <h6 className='fuente'>
+                    Su tamaño promiedo es de 59 y 56 cm de longitud
+                  </h6>
+                  <h6 className='fuente'>
+                    Difiere de las otras merluzas por la forma de la cola, que
+                    termina en punta por confluencia de las aletas dorsal y
+                    anal.
+                  </h6>
+                </div>
+                <div className='col-12 col-lg-6 '>
+                  <Image
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
+                    src='/img/corvina-blanca.png'
+                  />
+                  <h6 className='fuente'>
+                    Su tamaño adulto oscila desde los 30 cm hasta incluso
+                    superar los 2 m de longitud, pudiendo llegar a pesar más de
+                    50 kilos en casos excepcionales.
+                  </h6>
+                  <h6 className='fuente'>
+                    Su dieta incluye moluscos bivalvos, poliquetos, caracoles y
+                    ocasionalmente crustáceos y peces como la anchoíta.
+                  </h6>
+                </div>
+              </Row>
+            </Container>
+            <div id='tipos'></div>
+          </section>
 
           <section>
             <Container>
@@ -63,23 +263,23 @@ export default function Home() {
               <Row className='mb-4'>
                 <div>
                   <div className='d-flex justify-content-center fuente'>
-                    <p>
+                    <h6 className='fuente'>
                       Puede considerarse un barco de pesca aquel objeto flotante
                       desde el que alguien saca un pez del agua mediante algún
                       tipo de arte. Los hay en los que solo cabe una silla y un
                       pequeño motor eléctrico, o bien, de los que se parecen más
                       a un transatlántico.{" "}
-                    </p>
+                    </h6>
                   </div>
-                  <div className='parrafos fuente'>
-                    <p>
+                  <div>
+                    <h6 className='fuente'>
                       Más allá del tipo de técnica o material que utilices para
                       obtener tus capturas, el tipo de barcos pesqueros cobra
                       gran importancia, ya sea una lancha para montar en un
                       remolque o un crucero por su autonomía para hacer más
                       horas de curricán y el equipamiento específico para pesca
                       de altura.
-                    </p>
+                    </h6>
                   </div>
                 </div>
               </Row>
@@ -149,11 +349,26 @@ export default function Home() {
                   <Container>
                     <Row>
                       <div>
-                        <p className='fuente'>El Instituto Nacional de Investigación y Desarrollo Pesquero** (INIDEP) asesora a la Subsecretaría de Pesca y Acuicultura de la Nación (SSPyA), al Consejo Federal Pesquero (CFP) y a la Cancillería Argentina en el uso racional de los recursos pesqueros con el objetivo de preservar el ecosistema marino para las generaciones futuras.</p>
+                        <p className='fuente'>
+                          El Instituto Nacional de Investigación y Desarrollo
+                          Pesquero** (INIDEP) asesora a la Subsecretaría de
+                          Pesca y Acuicultura de la Nación (SSPyA), al Consejo
+                          Federal Pesquero (CFP) y a la Cancillería Argentina en
+                          el uso racional de los recursos pesqueros con el
+                          objetivo de preservar el ecosistema marino para las
+                          generaciones futuras.
+                        </p>
                       </div>
                     </Row>
                     <div>
-                      <p className='fuente'>Las misiones y funciones son formular, ejecutar y controlar los proyectos de investigación en prospección, evaluación y desarrollo de pesquerías, de tecnologías de acuicultura, de artes de pesca, de procesos tecnológicos y en economía pesquera, conforme a las pautas y prioridades que establezca la autoridad de aplicación.</p>
+                      <p className='fuente'>
+                        Las misiones y funciones son formular, ejecutar y
+                        controlar los proyectos de investigación en prospección,
+                        evaluación y desarrollo de pesquerías, de tecnologías de
+                        acuicultura, de artes de pesca, de procesos tecnológicos
+                        y en economía pesquera, conforme a las pautas y
+                        prioridades que establezca la autoridad de aplicación.
+                      </p>
                     </div>
                   </Container>
                 </div>
@@ -166,18 +381,92 @@ export default function Home() {
                   />
                 </div>
               </Row>
-              <div id="problematica"></div>
+              <Bootstrap2
+                direccion='/img/infraestructura.png'
+                titulo='Infraestructura.'
+                contedido='El edificio consta de tres áreas, que cubren 10650 Mts². La primera está formada por tres plantas unidas transversalmente. Aquí se ubican los gabinetes de trabajo de los investigadores y los laboratorios, que cuentan con equipamiento para efectuar sus tareas de acuerdo a los requerimientos de cada proyecto de investigación. También se encuentran la biblioteca, el aula chica, la sala de conferencias y el gabinete de fotografía, así como la dirección, las dependencias administrativas y la capitanía de armamento.
+              '
+              ></Bootstrap2>
+              <Bootstrap1
+                direccion='/img/infraestructura2.png'
+                contedido='La segunda área comprende la zona de taller y galpones, donde se almacenan los repuestos de los buques y los equipos de muestreo, que se utilizan en las campañas de investigación que realiza el Instituto. Desde allí, un portón se comunica con el muelle en el que amarran los buques de investigación del INIDEP, facilitando el acceso y el traslado del material desde y hacia los barcos.
+              En la tercer área se ubica la estación experimental de maricultura, de dos plantas, con sus salas de acuarios, sectores de cría, laboratorios y gabinetes de trabajo.
+              '
+              ></Bootstrap1>
+              <Container>
+                <Row>
+                  <div className='d-flex justify-content-center'>
+                    <h4 className='fuente'>historia de inidep</h4>
+                  </div>
+                </Row>
+                <Row>
+                  <div>
+                    <p className='fuente'>
+                      El Dr. Fernando Lahille fundó en 1898 el primer
+                      laboratorio costero de biología marina, ubicado en Punta
+                      Mogotes, Mar del Plata. En 1960, un grupo de
+                      investigadores y docentes de las Universidades Nacionales
+                      de Buenos Aires, La Plata y del Sur y del Poder Ejecutivo
+                      de la Provincia de Buenos Aires (CIC) originaron el
+                      Instituto de Biología Marina (IBM) en Playa Grande. En él
+                      se constituyeron los primeros laboratorios en los que se
+                      desarrollaron líneas básicas de investigación con equipos
+                      de trabajo permanentes. El 21 de octubre de 1977 se creó
+                      el INIDEP mediante la Ley 21.673 sobre la base del antiguo
+                      Instituto de Biología Marina. Es un organismo
+                      descentralizado de la Secretaría Agricultura, Ganadería y
+                      Pesca, dependiente del Ministerio de Economía de la
+                      Nación.
+                    </p>
+                    <p className="fuente">A fin de cumplir con los estudios necesarios, el INIDEP posee actualmente tres buques de investigación pesquera, el “Dr. Eduardo L. Holmberg”, el BIP "Víctor Angelescu" y el BIP "Mar Argentino", equipados para la exploración de extensas áreas marinas. La incorporación de estos buques fue vital para la obtención de información continua y especializada, imprescindible para el avance de las investigaciones orientadas al manejo racional de los recursos pesqueros.</p>
+                  </div>
+                </Row>
+                <Row>
+                  <Swiper2></Swiper2>
+                </Row>
+              </Container>
+              <div id='problematica'></div>
             </Container>
           </Container>
           <section>
             <Container>
-            <Row className=' mb-5 mt-5'>
-              <div className='d-flex titulo1 justify-content-center'>
-                <h2 className='fuente'>Problematica La milla 201</h2>
-              </div>
-            </Row>
+              <Row className=' mb-5 mt-5'>
+                <div className='d-flex titulo1 justify-content-center'>
+                  <h2 className='fuente'>Problematica La milla 201</h2>
+                </div>
+              </Row>
             </Container>
-
+          </section>
+          <section>
+            <Container className='mb-5'>
+              <Row className=' mb-5 mt-5 ' id='ques'>
+                <div className='d-flex titulo1 justify-content-center'>
+                  <h2 className='fuente '>Videos</h2>
+                </div>
+              </Row>
+              <Row>
+                <Card1
+                  direccion='https://youtu.be/BbWBRnDK_AE'
+                  titulo='lo que vaya'
+                  contenido='jakshgfjhsagf'
+                  boton='ir'
+                ></Card1>
+                <div className='col-1'></div>
+                <Card1
+                  direccion='https://youtu.be/BbWBRnDK_AE'
+                  titulo='lo que vaya'
+                  contenido='jakshgfjhsagf'
+                  boton='ir'
+                ></Card1>
+                <div className='col-1'></div>
+                <Card1
+                  direccion='https://youtu.be/BbWBRnDK_AE'
+                  titulo='lo que vaya'
+                  contenido='jakshgfjhsagf'
+                  boton='ir'
+                ></Card1>
+              </Row>
+            </Container>
           </section>
         </Layout>
       </main>

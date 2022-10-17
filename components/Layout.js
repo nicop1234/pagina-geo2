@@ -105,7 +105,7 @@ const header = ({ children }) => {
               <Collapse in={open2}>
                 <div id='bibliografia'>
                   <div className=' pt-2 '>
-                    <div className="fuente mx-5">
+                    <div className="mx-5">
                     <p> <span>- </span> https://www.argentina.gob.ar/inidep</p>
                     </div>
                   </div>

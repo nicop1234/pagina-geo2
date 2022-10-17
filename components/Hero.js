@@ -9,12 +9,14 @@ export const Hero = ({
   hrn4,
   hrn5,
   hrn6,
+  hrn7,
   n1,
   n2,
   n3,
   n4,
   n5,
   n6,
+  n7
 
 }) => {
   return (
@@ -36,12 +38,14 @@ export const Hero = ({
             hrn4={hrn4}
             hrn5={hrn5}
             hrn6={hrn6}
+            hrn7={hrn7}
             n1={n1}
             n2={n2}
             n3={n3}
             n4={n4}
             n5={n5}
             n6={n6}
+            n7={n7}
           />
         </Container>
       </div>

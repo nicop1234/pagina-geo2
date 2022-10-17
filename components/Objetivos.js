@@ -15,7 +15,7 @@ const objetivos = () => {
       <div className='fuente'>
         <Row>
           <div className='subtitulo'>
-            <h4 className='funete mb-4 '>Objetivos</h4>
+            <h4 className='fuente mb-4 '>Objetivos</h4>
           </div>
         </Row>
         <Row>
@@ -96,7 +96,7 @@ const objetivos = () => {
 
         <Row>
           <div className='subtitulo mt-4'>
-            <h4 className='funete mb-4 '>Fines</h4>
+            <h4 className='fuente mb-4 '>Fines</h4>
           </div>
         </Row>
         <Row>
