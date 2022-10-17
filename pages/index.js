@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Bootstrap1 from "../components/Bootstrap1";
 import Bootstrap2 from "../components/Bootstrap2";
+import Objetivos from "../components/Objetivos";
 import { Container, Row } from "react-bootstrap";
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
             hrn6='#problematica'
             n1='La pesca'
             n2='Que se pesca'
-            n3='Tipos de barcos y metodologias de pesca'
+            n3='Tipos de barcos'
             n4='Objetivos'
             n5='Inidep'
             n6='Problematica | milla 201'
@@ -48,11 +49,12 @@ export default function Home() {
             ingresos.'
               direccion='/img/pesca.jpg'
             />
+            <div id='tipos'></div>
           </Container>
 
           <section>
             <Container>
-              <Row className=' mb-5 mt-5' id='tipos'>
+              <Row className=' mb-5 mt-5'>
                 <div className='d-flex titulo1 justify-content-center'>
                   <h2 className='fuente'>Tipos de barcos</h2>
                 </div>
@@ -105,28 +107,77 @@ export default function Home() {
                 La mayoría de las consolas centrales funcionan con motores fuera de borda y pueden estar equipadas con uno o dos, lo que es común, hasta cinco o más en el caso de embarcaciones con consola central muy grandes.
                 '
               />
-                <Bootstrap2
+              <Bootstrap2
                 direccion='/img/Barco-cabinado-pequeño.png'
                 titulo='Barco cabinado pequeño'
                 contedido='El barco cabinado pequeño tiene unas dimensiones similares a las de la consola central. Sin embargo, el barco cabinado nos permite una mayor autonomía con la disposición de una cabina para poder pasar la noche en la embarcación.
                 Este tipo de embarcación se caracteriza por tener una proa elevada en forma de V que facilita las condiciones de planeo y nos garantiza estar estables. Además, la bañera es amplia, donde la opción de los motores fueraborda aporta amplitud a la estiba interior, detalles que caracterizan a esta embarcación como una propia de pescadores1
                 '
               />
-                <Bootstrap1
+              <Bootstrap1
                 direccion='/img/catamaran1.jpg'
                 titulo='Catamaran'
                 contedido='Los catamaranes nos ofrecen una gran eslora y un lujoso habitáculo donde los haya. Esta embarcación no solo se adapta a la afición de la pesca, sino también de las múltiples comodidades que este te ofrece.
                 Los dos cascos con los que cuenta aportan estabilidad en fondeo y en navegación. La separación entre motores permite un fácil movimiento que favorece especialmente a la pesca de altura.
                 '
               />
-                <Bootstrap2
+
+              <Bootstrap2
                 direccion='/img/barco-pesquero.jpg'
                 titulo='Crucero de pesca.'
                 contedido='Esta clase de crucero consta de más de 10 metros de eslora es el idóneo para la pesca de altura, además, nos da las comodidades que un barco de menores dimensiones no nos puede ofrecer.
                 Destaca de estos cruceros la gran autonomía de la que disponen al tener unos mayores depósitos de combustible. Algunos cuentan con sistemas intra bordos que facilitan las maniobras dentro y fuera del puerto. Cabe destacar que la amplitud de este tipo de embarcación nos permite contar con un mayor aforo.
                 '
               />
+              <div id='objetivos'></div>
             </Container>
+          </section>
+          <section>
+            <Objetivos></Objetivos>
+            <div id='inidep'></div>
+          </section>
+
+          <Container>
+            <Row className=' mb-5 mt-5'>
+              <div className='d-flex titulo1 justify-content-center'>
+                <h2 className='fuente'>Inidep</h2>
+              </div>
+            </Row>
+            <Container>
+              <Row>
+                <div className='col-12 col-lg-10 d-flex align-items-center mb-5'>
+                  <Container>
+                    <Row>
+                      <div>
+                        <p className='fuente'>El Instituto Nacional de Investigación y Desarrollo Pesquero** (INIDEP) asesora a la Subsecretaría de Pesca y Acuicultura de la Nación (SSPyA), al Consejo Federal Pesquero (CFP) y a la Cancillería Argentina en el uso racional de los recursos pesqueros con el objetivo de preservar el ecosistema marino para las generaciones futuras.</p>
+                      </div>
+                    </Row>
+                    <div>
+                      <p className='fuente'>Las misiones y funciones son formular, ejecutar y controlar los proyectos de investigación en prospección, evaluación y desarrollo de pesquerías, de tecnologías de acuicultura, de artes de pesca, de procesos tecnológicos y en economía pesquera, conforme a las pautas y prioridades que establezca la autoridad de aplicación.</p>
+                    </div>
+                  </Container>
+                </div>
+                <div className=' inidep col-12 col-lg-2 d-flex align-items-center mb-5 pb-3'>
+                  <Image
+                    width={225}
+                    height={225}
+                    layout='intrinsic'
+                    src='/img/inidep1.png'
+                  />
+                </div>
+              </Row>
+              <div id="problematica"></div>
+            </Container>
+          </Container>
+          <section>
+            <Container>
+            <Row className=' mb-5 mt-5'>
+              <div className='d-flex titulo1 justify-content-center'>
+                <h2 className='fuente'>Problematica La milla 201</h2>
+              </div>
+            </Row>
+            </Container>
+
           </section>
         </Layout>
       </main>
