@@ -32,7 +32,6 @@ export const Swiper1 = () =>{
             transition={{
               repeat: Infinity,
               repeatType: "mirror",
-              type:"spring",
               duration: 2
             }}
             viewport={{once:false}}

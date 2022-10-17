@@ -12,7 +12,22 @@ import {
 } from "react-bootstrap";
 import { useState } from "react";
 
-const Footer = ({hrn1, hrn2, hrn3, n1, n2, n3, hrn4, hrn5, hrn6, hrn7, n4, n5, n6, n7}) => {
+const Footer = ({  hrn1,
+  hrn2,
+  hrn3,
+  hrn4,
+  hrn5,
+  hrn6,
+  hrn7,
+  hrn8,
+  n1,
+  n2,
+  n3,
+  n4,
+  n5,
+  n6,
+  n7,
+  n8}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -62,6 +77,11 @@ const Footer = ({hrn1, hrn2, hrn3, n1, n2, n3, hrn4, hrn5, hrn6, hrn7, n4, n5, n
                   <ListGroup.Item>
                     <Link href={hrn7}>
                       <a className='anclas text-dark'>{n7}</a>
+                    </Link>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Link href={hrn8}>
+                      <a className='anclas text-dark'>{n8}</a>
                     </Link>
                   </ListGroup.Item>
                 </ListGroup>

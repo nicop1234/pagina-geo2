@@ -1,19 +1,21 @@
-import React from "react";
+/** @format */
 
-const Card1 = ( {direccion, titulo, contenido, boton} ) => {
+import React from "react";
+import Image from "next/image";
+
+const Card1 = ({ direccion, titulo, contenido, boton,link }) => {
   return (
-    <div style={{width:300}} class='card'>
-      <iframe className="mt-2"
-        width='280'
-        height='280'
-        src={direccion}
-        controls
-      ></iframe>
+    <div style={{ width: 325 }} class='card'>
+      <Image
+        width={1920}
+        height={1159}
+        layout='intrinsic'
+        src= {direccion}
+        />
       <div class='card-body'>
         <h5 class='card-title'>{titulo}</h5>
-        <p class='card-text'>{contenido}
-        </p>
-        <a href='#' class='btn btn-primary'>
+        <p class='card-text'>{contenido}</p>
+        <a target="_blank" href= {link} class='btn btn-primary'>
           {boton}
         </a>
       </div>

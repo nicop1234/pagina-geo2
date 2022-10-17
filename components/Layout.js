@@ -105,8 +105,31 @@ const header = ({ children }) => {
               <Collapse in={open2}>
                 <div id='bibliografia'>
                   <div className=' pt-2 '>
-                    <div className="mx-5">
-                    <p> <span>- </span> https://www.argentina.gob.ar/inidep</p>
+                    <div className='mx-5'>
+                      <p>
+                        {" "}
+                        <span>- </span> https://www.argentina.gob.ar/inidep
+                      </p>
+                      <p>
+                        {" "}
+                        <span>- </span> https://www.pampazul.gob.ar/investigacion-y-desarrollo/desarrollo-tecnologico/pesqueras/
+                      </p>
+                      <p>
+                        {" "}
+                        <span>- </span> https://www.nauticaydeportes.com/noticias/embarcaciones-perfectas-pesca/#:~:text=Barco%20cabinado%20pequeño.&text=Este%20tipo%20de%20embarcación%20se,y%20nos%20garantiza%20estar%20estables.
+                      </p>
+                      <p>
+                        {" "}
+                        <span>- </span> https://www.cosasdebarcos.com/blog/mercado/tipos-de-barcos-de-pesca/#Barco-cabinado-pequeño
+                      </p>
+                      <p>
+                        {" "}
+                        <span>- </span> https://sustainablefisheries-uw.org/seafood-101-es/metodos-de-pesca-comercial/
+                      </p>
+                      <p>
+                        {" "}
+                        <span>- </span> https://www.lanacion.com.ar/seguridad/el-juego-del-calamar-en-el-atlantico-sur-nid16122021/#:~:text=%E2%80%9CM%C3%A1s%20all%C3%A1%20de%20que%20a,199%20o%20201%E2%80%B3%2C%20afirma
+                      </p>{" "}
                     </div>
                   </div>
                 </div>

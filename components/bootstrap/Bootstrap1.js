@@ -8,12 +8,13 @@ const Bootstrap1 = ({ direccion, titulo, contedido }) => {
   return (
     <Container>
       <Row>
-        <div className=' col-12 col-lg-6 d-flex align-items-center mb-5'>
+      <div className=' col-12 col-lg-6 d-flex align-items-center mb-5'>
           <Image
             width={1920}
             height={1159}
             layout='intrinsic'
             src={direccion}
+            alt={titulo}
           />
         </div>
 

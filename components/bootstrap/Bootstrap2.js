@@ -28,6 +28,7 @@ const Bootstrap1 = ({ direccion, titulo, contedido }) => {
             height={1159}
             layout='intrinsic'
             src={direccion}
+            alt={titulo}
           />
         </div>
       </Row>
