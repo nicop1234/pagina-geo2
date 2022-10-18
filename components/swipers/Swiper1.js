@@ -37,7 +37,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
             >
               <a href="#merluza">
-                <img
+                <Image
+                alt="a"
+                className="imagen"
+                width={1920}
+                height={1159}
+                layout='intrinsic'
                     src='/img/merluza.png'
                   />
               </a>
@@ -55,7 +60,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
             >
               <a href="#Anchoita">
-                <img
+                <Image
+                alt="a"
+                className="imagen"
+                width={1920}
+                height={1159}
+                layout='intrinsic'
                     src='/img/anchoita.png'
                   />
               </a>
@@ -73,7 +83,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
             >
                 <a href="#Anchoita">
-                  <img
+                  <Image 
+                  alt="a"
+                  className="imagen"
+                  width={1920}
+                  height={1159}
+                  layout='intrinsic'
                     src='/img/caballa.png'
                   />
                 </a>
@@ -91,7 +106,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
         >
                 <a href="#merluza-cola">
-                  <img
+                  <Image
+                  alt="a"
+                  className="imagen"
+                  width={1920}
+                  height={1159}
+                  layout='intrinsic'
                     src='/img/merluza-cola.png'
                   />
                 </a>
@@ -109,7 +129,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
         >
                 <a href="#merluza-cola">
-                  <img
+                  <Image
+                  alt="a"
+                  className="imagen"
+                  width={1920}
+                  height={1159}
+                  layout='intrinsic'
                     src='/img/corvina-blanca.png'
                   />
                 </a>
@@ -127,7 +152,12 @@ export const Swiper1 = () =>{
             viewport={{once:false}}
                 >
                   <a href="#merluza">
-                    <img
+                    <Image
+                    alt="a"
+                    className="imagen"
+                    width={1920}
+                    height={1159}
+                    layout='intrinsic'
                     src='/img/merluza.png'
                   />
                   </a>
